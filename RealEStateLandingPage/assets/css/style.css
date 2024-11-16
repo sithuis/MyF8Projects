@@ -10,3 +10,9 @@ body{
     font-size: 1.6rem; /* The same setting 1rem = 10px + 0.6rem = 6px = 16px */
     font-family: 'Poppins';
 }
+
+/* Header */
+.header{
+    background: #E6F0FF;
+    height: 100vh;
+}
