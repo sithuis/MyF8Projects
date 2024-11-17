@@ -2,17 +2,148 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: #0F1B4C;
+    --wid:50;
+}
+
 html{
     font-size: 62.5%; /* The same setting 10px */
 }
 
 body{
     font-size: 1.6rem; /* The same setting 1rem = 10px + 0.6rem = 6px = 16px */
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Common */
+.content{
+    width: 1110px;
+    max-width: calc(100% - 24px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    padding: 1.5rem 3.8rem;
+    color: #FFF;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    background: var(--primary-color);
+    border-radius: 1.2rem;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    transition: all 0.3s ease-in;
 }
 
 /* Header */
 .header{
     background: #E6F0FF;
     height: 100vh;
+}
+
+.nav{
+    display: flex;
+    padding-top: 4.8rem;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.nav ul{
+    display: flex;
+    margin-left: 5rem;
+}
+
+.nav ul a{
+    padding: 1.2rem 1.4rem;
+    color: #4F5361;
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav ul a::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    right: 50%;
+    width: 0px;
+    height: 0.2rem;
+    background: #4F5361;
+    transition: all 0.3s ease;
+}
+
+.nav ul a:hover::before{
+    /* width: calc(100% - 2.8rem); */
+    /* --a : calc(calc(100% - 2.8rem) / 1px); */
+    /* max-width: calc(100% - 2.8rem); */
+    --wid:30;
+    width: 1px;
+    transform: scaleX(var(--wid));
+}
+
+.nav .nav-action{
+    margin-left: auto;
+}
+
+.nav .nav-action .nav-btn-action{
+    margin-left: 1.8rem;
+    padding: 1rem 2.3rem;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.nav .nav-action .nav-link-action{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Hero */
+
+.hero{
+    margin-top: 13rem;
+    width: 56rem;
+}
+
+.hero .sub-title{
+    color:#687690;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500s;
+    letter-spacing: 0.018rem;
+}
+
+.hero .title{
+    margin-top: 0.8rem;
+    color: #000336;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.6rem;
+}
+
+.hero .desc{
+    margin-top: 3rem;
+    color: #5a6473;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.2rem;
+}
+
+.hero .btn-cal{
+    display: inline-block;
+    margin-top: 4rem;
+
 }
