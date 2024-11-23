@@ -164,8 +164,8 @@ a{
 /* ===== Client ===== */
 
 .client-wrap{
-    margin-top: 7.9rem;
-    padding: 4.1rem 0rem;
+    margin-top: 12.2rem;
+    /* padding: 4.1rem 0rem; */
 }
 
 .client-info{
@@ -194,5 +194,45 @@ a{
     justify-content: space-between;
 }
 
+/* ===== Guides ===== */
 
+.guides{
+    margin-top: 174px;
+}
+
+.guides .sub-title{
+    position: relative;
+    color: #000339;
+    text-align: center;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.guides .sub-title::before{
+    content: "";
+    position:absolute;
+    display: inline-block;
+    top:-10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+
+}
+
+.guides .desc {
+    margin: 20px auto 0px auto;
+    color: #5A6473;
+    width: 459px;
+    max-width: 100%;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.87; /* 187.5% */
+}
 
