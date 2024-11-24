@@ -45,6 +45,15 @@ a{
     transition: all 0.3s ease-in;
 }
 
+
+.line-clamp{
+    /* this class use for display ... */
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 /* ===== Header ===== */
 .header{
     background: #E6F0FF;
@@ -165,7 +174,8 @@ a{
 /* ===== Client ===== */
 
 .client-wrap{
-    margin-top: 12.2rem;
+    margin-top: 7.9rem;
+    padding: 4.3px 0px;
     /* padding: 4.1rem 0rem; */
 }
 
@@ -198,7 +208,8 @@ a{
 /* ===== Guides ===== */
 
 .guides{
-    margin-top: 174px;
+    margin-top: 40px;
+    padding: 7.9px 0px;
 }
 
 .guides .sub-title{
@@ -285,7 +296,7 @@ a{
 
 .featured{
     background: #F5FAFE;
-    margin-top: 12rem;
+    margin-top: 4.1rem;
     padding: 110px 0px;
 }
 
@@ -348,12 +359,12 @@ a{
     padding: 17px 20px 23px;
 }
 
-.feature-body .title{
+.feature-body .title a{
     color: #000339;
     font-size: 2rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .feature-body .desc{
@@ -363,6 +374,8 @@ a{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    /* use to break word */
+    word-break: break-all;
 }
 
 .feature-body .info{
@@ -384,4 +397,137 @@ a{
     font-weight: 500;
     letter-spacing: 0.14px;
 }
+
+/* ===== Stats ===== */
+.stats{
+    margin-top: 75px;
+    padding: 50px 0px;
+}
+
+.stats .content{
+    width: 1017px;
+}
+
+.stats .row{
+    display:  flex;
+}
+
+.stats .img-block, .stats .stats-info{
+    width: 50%;
+}
+
+.stats .img-block{
+    position:  relative;
+}
+
+.stats .stats-trend{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:45px 22px 40px;
+    width: 239px;
+    background: #fff;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.stats .stats-trend .row{
+    justify-content: space-between;
+}
+
+.stats .stats-trend .value{
+    font-size: 2.6rem;
+    color: #000339;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.26px;
+}
+
+.stats .stats-trend .desc{
+    margin-top: 8px;
+    color: #a7a7a7;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.stats .stats-trend .seperater{
+    margin-top: 25px;
+    height: 2px;
+    background: #E9E9E9;
+}
+
+.stats .avatar-block{
+    display: flex;
+    gap: 16px 14px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.stats .avatar-block .avatar-group{
+    display: flex;
+}
+
+.stats .avatar-block .avatar-group .avatar{
+    width: 16px;
+    height: 16px; 
+    margin-left: -3px;  
+    border-radius: 50%;
+}
+
+.stats .avatar-block .avatar-6{
+    color: #FFF;
+    text-align: center;
+    font-size: 0.7rem;
+    font-style: normal;
+    line-height: 16px;
+    font-weight: 450;
+    letter-spacing: -0.145px;
+    background: #1F3BB1;
+}
+
+.stats .img-block .image{
+    display: block;
+    margin-left: auto;
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.stats .stats-info{
+    padding: 79px 0px 0px 165px;
+}
+
+.stats .stats-info .sub-title{
+    position: relative;
+    color: #000339;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.29; /* 128.571% */
+}
+
+.stats .stats-info .sub-title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+
+.stats .stats-info .desc{
+    width: 309px;
+    color: #5A6473;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.88;
+}
+
+
 
