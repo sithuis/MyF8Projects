@@ -54,15 +54,20 @@ a{
 }
 
 /* ===== Header ===== */
-.header{
+.fixed-header{
     background: #E6F0FF;
     padding-top: 3.8rem;
+    position:sticky;
+    top: -3.8rem;
+    z-index: 1;
 }
 
 .nav{
     display: flex;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
+    padding: 12px 0px;
     align-items: center;
+    
     /* flex-wrap: wrap; */
 }
 
@@ -122,9 +127,14 @@ a{
 /* ===== Hero ===== */
 
 .hero-wrap{
-    margin-top: 3.9rem;
-    height: 61.9rem;
+    display:  flex;
+    flex-direction: column;
+    /* margin-top: 3.9rem; */
+    height: 70.9rem;
+    max-height: 100vh;
     position: relative;
+    background: #E6F0FF;
+    padding-top: 9.8rem;
 }
 
 .hero-info{
@@ -202,6 +212,18 @@ a{
     display: flex;   
     align-items: center;
     justify-content: space-between;
+}
+
+.client-logo a{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0px 41px;
+    border-radius: 12px;
+}
+
+.client-logo a:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* ===== Guides ===== */
