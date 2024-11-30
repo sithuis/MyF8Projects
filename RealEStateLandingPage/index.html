@@ -4,30 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F8 Demo 01</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Reset -->
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <!-- Style -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <main>
+    <main id="home">
         <!-- Header -->
         <header class="fixed-header">
             <div class="content">
                 <!-- Header Navigation -->
                 <nav class="nav">
                     <!-- Logo -->
-                    <a href="#!"><img src="./assets/img/logo.svg" alt="Besnik."></a>
+                    <a href="#home"><img src="./assets/img/logo.svg" alt="Besnik."></a>
     
                     <!-- Navigation -->
                      <ul>
-                        <li><a href="#!">Home</a></li>
-                        <li><a href="#!">Features</a></li>
-                        <li><a href="#!">Services</a></li>
-                        <li><a href="#!">Resources</a></li>
-                        <li><a href="#!">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
                      </ul>
     
                     <!-- Action -->
@@ -56,7 +78,7 @@
         </div>
 
         <!-- Client -->
-         <div class="client-wrap">
+         <div class="client-wrap" id="services">
             <div class="content">
                 <!-- Client info -->
                 <div class="client-info">
@@ -90,7 +112,7 @@
          </div>
 
          <!-- Guides -->
-          <div class="guides">
+          <div class="guides" id="contact">
             <div class="content">
                 <h2 class="sub-title">How its works?</h2>
                 <p class="desc">Everything you need to know when you're looking to buy, rent, or sell - all in one place.</p>
@@ -120,7 +142,7 @@
           </div>
 
           <!-- Featured -->
-           <div class="featured">
+           <div class="featured" id="features">
             <div class="content">
                 <!-- Featured header -->
                 <header>
@@ -264,7 +286,7 @@
            </div>
 
            <!-- Subscription -->
-            <div class="subscription">
+            <div class="subscription" id="resources">
                 <div class="content subs-wrap">
                     <div class="subs-info">
                         <h2 class="subs-title line-clamp" style="--line-clamp:2;">Subscribe to our Newsletter! Subscribe to our Newsletter! Subscribe to our Newsletter!</h2>
