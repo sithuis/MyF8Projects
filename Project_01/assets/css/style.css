@@ -164,4 +164,59 @@ a{
     right: -100px;
     bottom: 0px;
 }
+
+/* ===== Client ===== */
+.client{
+    margin-top: 7.9rem;
+    padding: 4.1rem 0rem;
+}
+
+.client .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.client .row:not(:first-child, :last-child){
+    margin-top: 2.3rem;
+}
+
+.client .row-logo{
+    margin-top: 10rem;
+}
+
+.client .row-logo a{
+    display:  flex;
+    align-items: center;
+    height: 9.1rem;
+    padding: 0rem 4.1rem;
+    border-radius: 12px;
+}
+
+.client .row-logo a:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* =====Guides ===== */
+.guide-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ==== Features ===== */
+.features{
+    margin-top: 4.1rem;
+    padding: 11rem 0rem;
+    background: #F5FAFE;
+}
+
+
+
+
+/* ===== Stats ==== */
+
+
+
+
 /* ===== Footer ===== */
