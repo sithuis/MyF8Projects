@@ -1,0 +1,167 @@
+﻿
+:root{
+    --btn-color : #0F1B4C;
+    --title-color: #000339;
+    --desc-color: #5A6473;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ===== Common ===== */
+.content{
+    width: 1110px;
+    max-width: calc(100% - 24px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    background-color: var(--btn-color);
+    padding: 1.5rem 3.8rem;    
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+/* ===== Header ===== */
+.header{
+    background: #E6F0FF;
+    padding-top: 2.6rem;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 0rem;
+}
+
+.nav{
+    margin-left: 5rem;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul a{
+    display:  inline-block;
+    position: relative;
+    color: #4F5361;
+    padding: 1rem 1.4rem;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.nav ul a::after{
+    content: "";
+    position: absolute;
+    transform-origin: center;
+    display: block;
+    width: calc(100% - 2.8rem);
+    transform: scale(0,0);
+    height: 2px;
+    border-radius: 0.7px;
+    background: var(--btn-color);
+}
+
+.nav ul a:hover::after{
+    transform: scale(1,1);
+    transition: transform 0.3s linear;
+}
+
+.header-action{
+    margin-left: auto;
+}
+
+.header-action .link{
+    padding: 10px;
+    color: var(--btn-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.header-action .btn-header{
+    padding: 1rem 2.3rem;
+    margin-left: 1.8rem;
+    border-radius: 8px;
+}
+
+/* ===== Main ====== */
+.hero-wrap{
+    padding-top: 2.7rem;
+    background: #E6F0FF;
+    
+}
+
+.hero{
+    display: flex;
+    position: relative;
+    min-height: 62rem ;
+}
+
+.hero-info{
+    margin: 9rem 0rem;
+    width: 559px;   
+}
+
+.hero-info .sub-title{
+    color: #687690;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.18px;
+}
+
+.hero-info .title{
+    margin-top: 0.8rem;
+    color: #000336;
+    font-size: 6.1rem;
+    font-weight: 700;
+    line-height: 1.18;
+}
+
+.hero-info .desc{
+    margin-top: 3rem;
+    color: var(--desc-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.77;
+    font-style: normal;
+}
+
+.hero-info .btn-act{
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.hero .hero-img{
+    position: absolute;
+    right: -100px;
+    bottom: 0px;
+}
+/* ===== Footer ===== */
