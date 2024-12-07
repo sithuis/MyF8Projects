@@ -197,12 +197,77 @@ a{
 }
 
 /* =====Guides ===== */
-.guide-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.guides{
+    margin-top: 40px;
+    padding: 79px 0px;
 }
 
+.guide-content{
+    text-align: center;
+}
+
+.guide-content .heading{
+    position: relative;
+    color: var(--title-color);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.guide-content .heading::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 4.1rem;
+    height: 4px;
+    background: var(--title-color);
+    border-radius: 12px;
+    transform:translateX(-50%)
+}
+
+.guide-content .desc{
+    margin: 20px auto 0px;
+    color: #5A6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+    width: 459px;
+}
+
+.guide-content .guide-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+.guide .title{
+    margin-top: 26px;
+    color: #3B3C45;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.guide .link{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    color: #0689FF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    gap: 8px;
+}
+
+.guide-content .guide-act{
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 1.5rem 2.4rem;
+}
 
 /* ==== Features ===== */
 .features{
@@ -211,10 +276,230 @@ a{
     background: #F5FAFE;
 }
 
+.features .heading{
+    color: var(--title-color);
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.features .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features .desc{
+    margin-top: 15px;
+    color: var(--desc-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+}
+
+.features .feature-link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0689FF;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.feature-row{
+    gap: 30px;
+}
+
+.features .feature{
+    margin-top: 68px;
+    flex: 1;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.feature .thumb{    
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.feature .title, .feature .feature-desc, .feature-info{
+    margin-left: 20px;
+}
+
+.feature .title{
+    margin-top: 1.7rem;
+    color: var(--title-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.feature .feature-desc{
+    margin-top: 1.1rem;
+    color: #A3A6AB;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.feature .feature-info{
+    margin-top: 2.2rem;
+}
+
+.feature .feature-info{
+    margin-bottom: 2.3rem;
+    display: flex;
+    gap: 23px;
+    
+}
+
+.feature-info .info{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feature-info .info .label{
+    color: #444;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* ===== Stats ===== */
+
+.stats{
+    margin-top: 7.5rem;
+    padding: 50px 0px;
+}
+
+.stats .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats .image-block, .stats .stats-info{
+    width: 50%;
+}
+
+.stats .image-block .thumb{
+    display: block;
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-left: auto;
+}
+
+.stats .stats-info{
+    flex: 1;
+    margin-left: 16.5rem;
+}
+
+.stats-info .title{
+    color: var(--title-color);
+    font-size: 3.5rem;
+    line-height: 1.28;
+    font-weight: 600;
+    width: 269px;
+}
+
+.stats-info .desc{
+    margin-top: 20px;
+    color: #5A6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+}
+
+.stats .value{
+    margin-top: 110px;
+}
+
+.stats .value strong{
+    color: #000;
+    font-size: 6.4rem;
+    font-weight: 600;
+}
+
+.stats .value p{
+    color:#7B8087;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.stats .value:first-child{
+    padding-left: 32px;   
+}
+
+.stats .trend{
+    padding: 45px 22px;
+    width: 239px;
+    height: 200px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background: orange;
+}
+
+.stats .trend .trend-value{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.trend .trend-value strong{
+    color: #000339;
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.trend .trend-value img{
+    width: 26px;
+    height: 16px;
+    object-fit: fill;
+    padding: 5px;
+}
 
 
 
-/* ===== Stats ==== */
+.trend .user-sub{
+    display: flex;
+    width: 188px;
+    gap: 16px 14px;
+    flex-wrap: wrap;
+    /* gap: 14px; */
+}
+
+.trend .user-sub .avatar-group{
+    display: flex;
+}
+
+.trend .user-sub .avatar{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin-left: -3px;
+}
+
+.trend .user-sub .avatar:first-child{
+    margin-left: 0px;
+}
+
+
+/* ===== Subcribe ===== */
+
+.subcribe{
+    margin-top: 50px;
+    padding-top: 40px;
+}
+
+.subcribe .content{
+    background: #063183;
+    border-radius: 20px;
+    height: 383px;
+}
+
 
 
 
